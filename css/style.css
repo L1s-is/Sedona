@@ -1,0 +1,619 @@
+/*Убрать стрелочки у цифровых полей ввода для хром*/
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/*Убрать стрелочки у цифровых полей ввода для мозилы*/
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+input[type="number"]:hover,
+input[type="number"]:focus {
+  -moz-appearance: number-input;
+}
+/*Убрать стрелочки у цифровых полей ввода для остальных*/
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body{
+	font-family: "PT Sans", Arial, sans-serif;
+	padding: 0;
+	margin: 0;
+ 	background-color: #f2f2f2;
+  font-size: 14px;
+  text-transform: uppercase; 
+}
+.hidden{
+	display: none;
+}
+/* Ширина сайта от 1200 до 768,
+выравнивание по центру, легкая тень по бокам */
+.sedona-width{
+	max-width: 1200px;
+	min-width: 768px;
+	margin: 0 auto;
+	background-color: #ffffff;
+	text-align: center;	
+	box-shadow: 0 4px 13px 4px #dbdbdb;
+}
+
+/* Хидер сайта */
+.page-header{
+	position: relative;
+	height: 565px;
+	max-width: 100%;
+	background: url("../img/background_photo.jpg") no-repeat center top;
+}
+.page-header::after{	
+	padding: 0;
+	position: absolute;
+	content: "";
+	z-index: 2;
+	bottom: 0;
+	right: 0;
+	display: block;		
+	height: 58px;
+	width: 100%;
+	background: url("../img/polygon_.png") no-repeat center bottom;
+}
+.welcome-img{
+	margin-top: 76px;
+	padding-top: 0;
+}
+/* Навигация */
+.nav{	
+	min-height: 56px;
+	background-color: #ffffff;
+	max-width: 1200px;
+	min-width: 768px;
+}
+.nav-list{
+	padding: 0;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	justify-content: flex-start;
+	max-width: 88%;	
+	height: 56px;
+	background-color: #ffffff;
+}
+.nav-menu a{	
+	font-weight: bold;
+	text-decoration: none;
+	color: #000000;	
+	vertical-align: middle;
+	padding: 0 auto;
+	cursor: pointer;
+	line-height: 26px;
+}
+.nav-menu a:hover{
+	color: #81b3d2;
+}
+.nav-menu a:active{
+	color: #cacaca;
+}
+.nav-menu{
+	padding: 15px 0;
+	font-size: 14px;
+	width: 128px;
+	text-align: left;
+	width: 23%;	
+}
+.nav-menu:nth-of-type(2){
+	padding-right: auto;
+}
+.nav-list li:nth-of-type(3),
+.nav-list li:nth-of-type(4){	
+	text-align: right;
+}
+.nav-list li:nth-of-type(3){
+	margin-left: auto;
+}
+
+/* Логотип */
+.main-logo{
+	display: block;
+  width: 138px;
+  position: absolute;
+  left: -69px;
+  margin-left: 50%;
+  z-index: 2;
+}
+/* Начальный блок. Седона заслуживает большего)) */
+.block-main{
+	box-sizing: border-box;
+	min-height: 215px;
+	background-color: #ffffff;
+	padding: 0;
+	vertical-align: middle;
+	line-height: 26px;
+	font-size: 14px;
+	padding-top: 60px;
+}
+.block-main h1{	
+	margin: 0;
+	padding: 0;
+	margin-bottom: 28px;
+	font-size: 21px;
+	color: #000000;
+	line-height: 26px;
+}
+.block-main p{
+	margin: 0;
+	padding: 0;
+	margin-bottom: 55px;	
+	color: #000000;
+}
+/* Первый блок. Город со своей жизнью */
+.block-1{	
+	display: flex;
+	min-height: 256px;
+	justify-content: space-between;
+	background-color: #81b3d2;
+}
+.block-1-content{	
+	padding-top: 30px;
+	width: 33.33%;
+	font-size: 14px;
+	color: #ffffff;
+	line-height: 21px;
+	align-self: center;
+}
+.block-1-content p{
+	margin: 0;
+	padding: 0;
+	margin-bottom: 20px;	
+}
+.block-1-content b{
+	margin: 0;
+	padding: 0;
+	margin-bottom: 20px;
+	display: block;
+	font-size: 21px;
+}
+.block-1-img{
+	width: 800px;
+	max-width: 66.67%;
+	background: url("../img/mountain.jpg") no-repeat center center;
+	min-height: 256px;	
+	height: auto;
+}
+
+/* Блок описания преимуществ: Жилье, еда, сувениры */
+.advantages{
+	padding: 56px 0;
+	margin: 0;
+	min-height: 331px;
+	box-sizing: border-box;
+}
+.advantages-content{
+	display: flex;
+	background-color: #ffffff;
+	flex-wrap: wrap;
+	font-size: 14px;
+	line-height: 21px;
+	padding: 0;
+	margin: 0;
+	align-items: center;
+	vertical-align: baseline;
+}
+.advantages-content li{
+	padding: 0;
+	margin: 0;
+	width: 33.33%;
+	list-style: none;
+	align-self: center;
+	vertical-align: baseline;
+}
+.advantages-content b{
+	display: block;
+	font-size: 21px;
+	margin-bottom: 25px;
+}
+.advantages-content p{
+	margin-bottom: 20px;
+}
+.advantages-content img{	
+	width: auto;
+	height: 76px;
+	margin-bottom: 20px;
+}
+
+/* Второй блок. Достопримечательность - мост дьявола */
+.block-2{
+	display: flex;
+	justify-content: space-between;
+	min-height: 256px;
+	color: #ffffff;
+	background-color: #81b3d2;
+}
+.block-2-content{
+	padding-top: 30px;
+	box-sizing: border-box;
+	align-self: center;
+	width: 33%;
+	font-size: 14px;	
+	line-height: 21px;
+}
+.block-2-content b{
+	margin: 0;
+	padding: 0;
+	margin-bottom: 25px;
+	display: block;
+	font-size: 21px;
+}
+.block-2-content p{
+	margin: 0;
+	padding: 0;
+	margin-bottom: 25px;	
+}
+.block-2-img{
+	width: 800px;
+	max-width: 66.67%;
+	min-height: 256px;	
+	background: url("../img/devil--bridge.jpg") no-repeat center center;
+	height: auto;
+}
+
+/* Блок достоинств туристического города:
+площадь, красивая дорога, мало туристов */
+.description{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 50px 0;
+	background-color: #eeeeee;
+	display: flex;
+	width: 100%;
+	min-height: 257px;
+	justify-content: space-around;
+	align-items: center;
+}
+.description-content{
+	width: 33%;	
+	font-size: 14px;
+	color: #000000;
+	line-height: 21px;	
+}
+.description-content b{
+	margin: 0;
+	padding: 0;
+	margin-bottom: 22px;
+	display: block;
+	font-size: 21px;
+}
+.description-content p{
+	margin: 0;
+	padding: 0;
+	margin-bottom: 25px;
+}
+
+/* Блок поиска отеля */
+.search-hotel{
+	position: relative;
+	box-sizing: border-box;
+	max-width: 100%;
+	min-height: 291px;
+	background-color: #ffffff;
+	color:  #000000;
+	padding-top: 50px;
+}
+.interest-main{
+	margin: 0;
+	padding: 0;
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 36px;
+	margin-bottom: 25px;
+	text-align: center;
+}
+.interest-par{
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	line-height: 24px;
+	margin-bottom: 46px;
+}
+/* Кнопка "Поиск гостиницы в Седоне" */
+.search-button{
+	position: relative;
+	z-index: 3;
+	text-transform: uppercase;
+	cursor: pointer;
+	border: none;
+	width: 568px;
+	height: 86px;
+	background-color: #766357;
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 21px;
+	line-height: 26px;
+}
+.search-button:hover{
+	background-color: #604e43;	
+}
+.search-button:active{
+	background-color: #503e33;
+	color: #928a85;
+}
+/* Форма поиска гостиницы, по умолчанию скрыта */
+.search-form{
+	display: none;
+	position: absolute;
+	top: 100%;
+	margin-left: 50%;
+	left: -284px;	
+	z-index: 2;
+	padding: 55px;
+	box-sizing: border-box;	
+	width: 568px;
+	min-height: 396px;
+	background-color: #ffffff;
+	text-align: center;
+	box-shadow: 0 4px 13px 4px #dbdbdb;
+}
+/* выдвигает форму с помощью js */
+.open{
+	display: block;
+}
+.search-form ul{
+	padding: 0;
+	margin: 0;
+}
+.search-form li{
+	padding: 0;
+	margin: 0;
+}
+.search-form label{
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+	width: 112px;
+	text-align: left;
+}
+.search-item.counter:last-of-type label{	
+	width: 65px;	
+}
+/* Поле ввода даты заезда/выезда */
+.search-data{
+	display: inline-block;
+	box-sizing: border-box;
+	text-decoration: none;
+	border: none;
+	padding-left: 13px;
+	margin: 0;
+	margin-bottom: 29px;
+	width: 346px;
+	height: 38px;
+	color: #000000;
+	text-transform: uppercase;
+	font-weight: 700;
+	background-color: #f2f2f2;
+}
+.search-data:hover{	
+	background-color: #ebebeb;
+}
+.search-data:focus{	
+	outline: none;
+	background-color: #ffffff;	
+	border: 2px solid #e5e5e5;
+}
+/* Список полей подсчета взрослых и детей для поиска гостиницы */
+.search-list-counter{
+	display: flex;
+	justify-content: space-between;
+	padding-left: 0;
+	align-items: center;
+	height: 38px;	
+}
+/* li полей ввода даты */
+.search-item{
+	position: relative;
+	list-style: none;
+	font-weight: 700;
+	line-height: 26px;
+	font-size: 14px;
+}
+/* li полей счетчика взрослых/детей */
+.search-item.counter{
+	display: flex;
+	padding-left: 0;
+	align-items: center;
+	height: 38px;
+}
+/* стиль поля подсчета детей/взрослых + 
+кнопки увеличения/уменьшения счетчика на js */
+.search-counter{
+	box-sizing: border-box;
+	position: relative;
+	width: 38px;
+	height: 38px;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 0;
+	border: none;
+	background-color: #f2f2f2;
+	color: #000000;
+	text-align: center;
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: 700;
+}
+.search-counter:not(.btn-minus, .btn-plus):hover{	
+	background-color: #ebebeb;
+}
+.search-counter:not(.btn-minus, .btn-plus):focus{	
+	outline: none;
+	background-color: #ffffff;	
+	border: 2px solid #e5e5e5;
+}
+
+/* Иконка календарика на полях выбора даты */
+.calendar{
+	background-color: transparent;
+	padding: 0;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	z-index: 2;
+	top: 5px;
+	fill: #a9a9a9;
+	left: 425px;
+	border: none;
+	cursor: pointer;
+}
+/* изменение цвета иконок календаря, плюса и минуса 
+на полях выбора даты и полях ввода */
+.btn-minus .counter-svg,
+.btn-plus .counter-svg{
+	cursor: pointer;	
+	fill: #a9a9a9;
+}
+.calendar svg:hover,
+.btn-minus .counter-svg:hover,
+.btn-plus .counter-svg:hover{
+	fill: #000000;
+}
+.calendar svg:active,
+.btn-minus .counter-svg:active,
+.btn-plus .counter-svg:active{
+	fill: #81b3d2;
+}
+/*
+.btn::before{
+	content: "";
+	display: block;
+	position: absolute;
+	width: 11px;
+	height: 3px;
+	top: 18px;
+	left: 14px;
+	background-color: #a9a9a9;
+}
+.btn:nth-of-type(even)::after{
+	content: "";
+	position: absolute;
+	display: block;
+	width: 3px;
+	height: 11px;
+	top: 14px;
+	left: 18px;
+	background-color: #a9a9a9;
+}*/
+
+/* Кнопка отправки формы для поиска гостиницы */
+.search-submit{
+	margin-top: 55px;
+	cursor: pointer;
+	border: none;
+	width: 459px;
+	height: 58px;
+	background-color: #81b3d2;
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+.search-submit:hover{	
+	background-color: #669ec0;
+}
+.search-submit:active{	
+	background-color: #5496bd;	
+	color: #94b9d2;	
+}
+
+/* Блок поиска по карте */
+.map{
+	margin: 0;	
+	padding: 0;
+	width: 100%;
+	height: 474px;
+}
+
+/* Фотер сайта */
+.page-footer{
+	padding: 0;
+	margin: 0;
+	max-width: 100%;
+	min-height: 120px;
+	display: flex;
+	justify-content: space-around;
+}
+.page-footer div{
+	align-self: center;
+}
+/* Контакты, связь */
+.contacts{
+	font-weight: 700;
+	font-size: 21px;
+	line-height: 26px;
+	padding: 36px 0;
+	box-sizing: border-box;
+	margin: 5px 0;
+	text-align: left;
+}
+/* список ссылок на соцсети */
+.social-list{
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+	padding-top: 5px;
+	width: 150px;
+	flex-wrap: wrap;
+}
+.social-twit svg{
+	position: absolute;
+	left: 15px;
+	top: 17px;
+}
+.social-fb svg{
+	position: absolute;
+	left: 17px;
+	top: 13px;
+}
+.social-youtube svg{
+	position: absolute;
+	left: 13px;
+	top: 16px;
+}
+.social a{
+	position: relative;
+	display: block;
+	padding: auto;
+	width: 46px;
+	height: 48px;
+	background: #81b3d2;
+	fill: #ffffff;
+	margin-bottom: 5px;
+}
+.social a:hover{	
+	background-color: #669ec0;
+}
+.social a:active{	
+	background-color: #5496bd;	
+	fill: #94b9d2;	
+}
+/* Дизайн сайта от HTML Academy */
+.design-by{
+	padding: 39px 0;
+	display: flex;
+	justify-content: space-between;
+	width: 197px;
+}
+.design-by a{
+	width: 115px;
+	height: 41px;
+	fill: #000000;
+}
+.design-by a:hover{	
+	fill: #81b3d2;
+}
+.design-by a:active{	
+	fill: #bdbbbc;
+}
