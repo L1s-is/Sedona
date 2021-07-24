@@ -23,7 +23,7 @@ adultsCounterPlus.onclick = function () {
   }
 };
 childCounterMinus.onclick = function () {
-  if(childCounter.value > 1){
+  if(childCounter.value > 0){
     childCounter.value--;
   }
 };
