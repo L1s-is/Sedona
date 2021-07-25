@@ -43,12 +43,10 @@ body{
 
 /* Хидер сайта */
 .page-header{
-	position: relative;
-	height: 565px;
-	max-width: 100%;
-	background: url("../img/background_photo.jpg") no-repeat center top;
+	position: relative;	
+	max-width: 100%;	
 }
-.page-header::after{	
+.page-header-bottom-img{	
 	padding: 0;
 	position: absolute;
 	content: "";
@@ -61,11 +59,15 @@ body{
 	background: url("../img/polygon_.png") no-repeat center bottom;
 }
 .welcome-img{
-	margin-top: 76px;
-	padding-top: 0;
+	height: 509px;
+	padding-top: 132px;
+	margin-top: -56px;
+	background: url("../img/background_photo.jpg") no-repeat center top;
 }
 /* Навигация */
 .nav{	
+	position: relative;
+	z-index: 2;
 	min-height: 56px;
 	background-color: #ffffff;
 	max-width: 1200px;
